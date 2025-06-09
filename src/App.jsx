@@ -6,6 +6,7 @@ import MiniNavPage from "./Pages/MiniVanPage";
 import CarHirePage from "./Pages/CarHirePage";
 import BusTicketPage from "./Pages/BusTicketPage";
 import BusTourPage from "./Pages/BusTourPage";
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/bus-ticket" element={<BusTicketPage />} />
         <Route path="bus-tour" element={<BusTourPage />} />
       </Routes>
+      <Footer />
     </div>
   );
 };
