@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import BusHirePage from "./Pages/BusHirePage";
-import MiniNavPage from "./Pages/MiniVanPage";
+import MiniVanPage from "./Pages/MiniVanPage";
 import CarHirePage from "./Pages/CarHirePage";
 import BusTicketPage from "./Pages/BusTicketPage";
 import BusTourPage from "./Pages/BusTourPage";
