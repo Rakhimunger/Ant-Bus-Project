@@ -1,7 +1,12 @@
 import React from "react";
+import HeaderPage from "../Components/HeaderPage";
 
-const CarHire = () => {
-  return <div></div>;
+const CarHirePage = () => {
+  return (
+    <div>
+      <HeaderPage />
+    </div>
+  );
 };
 
-export default CarHire;
+export default CarHirePage;

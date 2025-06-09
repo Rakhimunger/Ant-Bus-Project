@@ -38,7 +38,7 @@ const Footer = () => {
 
         {/* Our Services */}
         <div>
-          <h3 className="text-lg text-blue-700 font-semibold mb-4">
+          <h3 className="text-lg text-blue-900 font-semibold mb-4">
             Our Services
           </h3>
           <ul className="space-y-2 text-sm text-gray-800">
@@ -52,7 +52,7 @@ const Footer = () => {
               "Sedan / Hatchback Car Hire",
               "SUV / MUV Car Hire",
             ].map((item, idx) => (
-              <li key={idx} className="hover:text-blue-500 cursor-pointer">
+              <li key={idx} className="hover:text-blue-900 cursor-pointer">
                 › {item}
               </li>
             ))}
@@ -61,7 +61,7 @@ const Footer = () => {
 
         {/* Company */}
         <div>
-          <h3 className="text-lg text-blue-700 font-semibold mb-4">Company</h3>
+          <h3 className="text-lg text-blue-900 font-semibold mb-4">Company</h3>
           <ul className="space-y-2 text-sm text-gray-800">
             {[
               "Become Bus Operator",
@@ -72,7 +72,7 @@ const Footer = () => {
               "Terms & Conditions",
               "Policy",
             ].map((item, idx) => (
-              <li key={idx} className="hover:text-blue-500 cursor-pointer">
+              <li key={idx} className="hover:text-blue-900 cursor-pointer">
                 › {item}
               </li>
             ))}
@@ -81,7 +81,7 @@ const Footer = () => {
 
         {/* Address */}
         <div>
-          <h3 className="text-lg text-blue-700 font-semibold mb-4">Address</h3>
+          <h3 className="text-lg text-blue-900 font-semibold mb-4">Address</h3>
           <ul className="space-y-4 text-sm text-gray-800">
             <li className="flex items-start">
               <span className="bg-orange-600 text-white p-2 rounded-full mr-3 shadow-md">

@@ -41,19 +41,19 @@ const BookBusHire = () => {
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto px-3">
         {[
           {
-            icon: <BusFront className="text-blue-700 w-12 h-12 shrink-0" />,
+            icon: <BusFront className="text-blue-900 w-12 h-12 shrink-0" />,
             title: "Wide Bus Options",
             desc: "From luxury to budget-friendly",
           },
           {
             icon: (
-              <CalendarCheck2 className="text-blue-700 w-12 h-12 shrink-0" />
+              <CalendarCheck2 className="text-blue-900 w-12 h-12 shrink-0" />
             ),
             title: "Flexible Booking",
             desc: "Fully customizable journeys",
           },
           {
-            icon: <UserCheck className="text-blue-700 w-12 h-12 shrink-0" />,
+            icon: <UserCheck className="text-blue-900 w-12 h-12 shrink-0" />,
             title: "Smart Autofill",
             desc: "Instant and quick reservations",
           },
@@ -75,7 +75,7 @@ const BookBusHire = () => {
 
       {/* CTA Button */}
       <div className="mt-8 text-center px-3">
-        <button className="bg-blue-700 hover:bg-blue-800 text-white font-semibold text-base sm:text-lg py-3 sm:py-4 px-12 sm:px-14 rounded-full shadow-lg transition-transform duration-300 hover:scale-105 active:scale-95 focus:outline-none focus:ring-4 focus:ring-blue-300">
+        <button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold text-base sm:text-lg py-3 sm:py-4 px-12 sm:px-14 rounded-full shadow-lg transition-transform duration-300 hover:scale-105 active:scale-95 focus:outline-none focus:ring-4 focus:ring-blue-300">
           Explore Booking Options
         </button>
       </div>

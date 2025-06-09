@@ -17,27 +17,27 @@ const Navbar = () => {
       {/* Desktop Navigation */}
       <ul className="hidden lg:flex space-x-6 text-sm font-medium text-gray-800">
         <li>
-          <Link to="/" className="hover:text-blue-600 cursor-pointer">
+          <Link to="/" className="hover:text-blue-900 cursor-pointer">
             Bus Hire
           </Link>
         </li>
         <li>
-          <Link to="/mini-van" className="hover:text-blue-600 cursor-pointer">
+          <Link to="/mini-van" className="hover:text-blue-900 cursor-pointer">
             Minivan
           </Link>
         </li>
         <li>
-          <Link to="/car-hire" className="hover:text-blue-600 cursor-pointer">
+          <Link to="/car-hire" className="hover:text-blue-900 cursor-pointer">
             Car Hire
           </Link>
         </li>
         <li>
-          <Link to="/bus-ticket" className="hover:text-blue-600 cursor-pointer">
+          <Link to="/bus-ticket" className="hover:text-blue-900 cursor-pointer">
             Bus Ticket
           </Link>
         </li>
         <li>
-          <Link to="/bus-tour" className="hover:text-blue-600 cursor-pointer">
+          <Link to="/bus-tour" className="hover:text-blue-900 cursor-pointer">
             Bus Tour
           </Link>
         </li>
@@ -45,7 +45,7 @@ const Navbar = () => {
 
       {/* Right Side Buttons */}
       <div className="hidden lg:flex items-center space-x-4">
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">
+        <button className="bg-blue-900 text-white px-4 py-2 rounded-full hover:bg-blue-900 transition">
           Book Now →
         </button>
 
@@ -53,7 +53,7 @@ const Navbar = () => {
         <div className="relative">
           <button
             onClick={() => setDropdownOpen(!dropdownOpen)}
-            className="bg-blue-100 text-blue-700 px-4 py-2 rounded-full flex items-center gap-1 hover:bg-blue-200"
+            className=" text-white bg-blue-900 px-4 py-2 rounded-full flex items-center gap-1"
           >
             Manage Booking <FaChevronDown className="text-xs" />
           </button>
@@ -100,14 +100,14 @@ const Navbar = () => {
           </div>
           <ul className="space-y-4 text-gray-800 font-medium">
             <li>
-              <Link to="/" className="hover:text-blue-600 cursor-pointer">
+              <Link to="/" className="hover:text-blue-900 cursor-pointer">
                 Bus Hire
               </Link>
             </li>
             <li>
               <Link
                 to="/mini-van"
-                className="hover:text-blue-600 cursor-pointer"
+                className="hover:text-blue-900 cursor-pointer"
               >
                 Minivan
               </Link>
@@ -115,7 +115,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/car-hire"
-                className="hover:text-blue-600 cursor-pointer"
+                className="hover:text-blue-900 cursor-pointer"
               >
                 Car Hire
               </Link>
@@ -123,7 +123,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/bus-ticket"
-                className="hover:text-blue-600 cursor-pointer"
+                className="hover:text-blue-900 cursor-pointer"
               >
                 Bus Ticket
               </Link>
@@ -131,7 +131,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/bus-tour"
-                className="hover:text-blue-600 cursor-pointer"
+                className="hover:text-blue-900 cursor-pointer"
               >
                 Bus Tour
               </Link>
@@ -140,14 +140,14 @@ const Navbar = () => {
 
           {/* Book Now and Dropdown inside mobile menu */}
           <div className="mt-6 space-y-4">
-            <button className="w-full bg-blue-600 text-white py-2 rounded-full">
+            <button className="w-full bg-blue-900 text-white py-2 rounded-full">
               Book Now →
             </button>
 
-            <div>
+            <div className="text-white">
               <button
                 onClick={() => setDropdownOpen(!dropdownOpen)}
-                className="w-full bg-blue-100 text-blue-700 py-2 rounded-full flex items-center justify-center gap-1"
+                className="w-full py-2 rounded-full flex items-center justify-center gap-1 text-white bg-blue-900"
               >
                 Manage Booking <FaChevronDown className="text-xs" />
               </button>

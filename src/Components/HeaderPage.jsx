@@ -71,7 +71,7 @@ const BusHirePage = () => {
 
             {/* Modify Button */}
             <div className="flex-shrink-0">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-sm font-semibold shadow-md transition-all">
+              <button className="bg-blue-900 hover:bg-blue-900 text-white px-6 py-3 rounded-full text-sm font-semibold shadow-md transition-all">
                 🔍 Modify Search
               </button>
             </div>

@@ -136,10 +136,10 @@ const Minivan = ({
         </span>
       </p>
       <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-3 pt-4 w-full">
-        <button className="flex items-center gap-1 text-white bg-blue-600 px-4 py-2 rounded-full font-semibold hover:bg-blue-700 transition">
+        <button className="flex items-center gap-1 text-white bg-blue-800 px-4 py-2 rounded-full font-semibold hover:bg-blue-900 transition">
           Details <ArrowRight size={18} />
         </button>
-        <button className="flex items-center gap-1 text-white bg-blue-600 px-4 py-2 rounded-full font-semibold hover:bg-blue-700 transition">
+        <button className="flex items-center gap-1 text-white bg-blue-800 px-4 py-2 rounded-full font-semibold hover:bg-blue-900 transition">
           Book Now <ArrowRight size={18} />
         </button>
       </div>
