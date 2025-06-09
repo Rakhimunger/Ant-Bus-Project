@@ -45,7 +45,7 @@ const Navbar = () => {
 
       {/* Right Side Buttons */}
       <div className="hidden lg:flex items-center space-x-4">
-        <button className="bg-blue-900 text-white px-4 py-2 rounded-full hover:bg-blue-900 transition">
+        <button className="bg-gradient-to-r from-[#3B4B96] to-[#FF5722] text-white px-6 py-2.5 rounded-xl hover:from-[#2C3A7D] hover:to-[#E64A19] transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
           Book Now →
         </button>
 
@@ -53,7 +53,7 @@ const Navbar = () => {
         <div className="relative">
           <button
             onClick={() => setDropdownOpen(!dropdownOpen)}
-            className=" text-white bg-blue-900 px-4 py-2 rounded-full flex items-center gap-1"
+            className="bg-gradient-to-r from-[#3B4B96] to-[#FF5722] text-white px-6 py-2.5 rounded-xl hover:from-[#2C3A7D] hover:to-[#E64A19] transition-all duration-300 flex items-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
           >
             Manage Booking <FaChevronDown className="text-xs" />
           </button>

@@ -51,6 +51,54 @@ const buses = [
     outstationPrice: "₹14200/-",
     image: antbus,
   },
+  {
+    title: "AC Delux Bus 49 Seater (2+2)",
+    city: "Delhi NCR",
+    localRun: "4 Hours 40 km",
+    localPrice: "₹14200/-",
+    outstationPrice: "₹14200/-",
+    image: antbus,
+  },
+  {
+    title: "AC Delux Bus 49 Seater (2+2)",
+    city: "Delhi NCR",
+    localRun: "4 Hours 40 km",
+    localPrice: "₹14200/-",
+    outstationPrice: "₹14200/-",
+    image: antbus,
+  },
+  {
+    title: "AC Delux Bus 49 Seater (2+2)",
+    city: "Delhi NCR",
+    localRun: "4 Hours 40 km",
+    localPrice: "₹14200/-",
+    outstationPrice: "₹14200/-",
+    image: antbus,
+  },
+  {
+    title: "AC Delux Bus 49 Seater (2+2)",
+    city: "Delhi NCR",
+    localRun: "4 Hours 40 km",
+    localPrice: "₹14200/-",
+    outstationPrice: "₹14200/-",
+    image: antbus,
+  },
+  {
+    title: "AC Delux Bus 49 Seater (2+2)",
+    city: "Delhi NCR",
+    localRun: "4 Hours 40 km",
+    localPrice: "₹14200/-",
+    outstationPrice: "₹14200/-",
+    image: antbus,
+  },
+  {
+    title: "AC Delux Bus 49 Seater (2+2)",
+    city: "Delhi NCR",
+    localRun: "4 Hours 40 km",
+    localPrice: "₹14200/-",
+    outstationPrice: "₹14200/-",
+    image: antbus,
+  },
 ];
 
 const CardsBuses = ({
@@ -88,10 +136,10 @@ const CardsBuses = ({
         </span>
       </p>
       <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-3 pt-4 w-full">
-        <button className="flex items-center gap-1 text-white bg-blue-900 px-4 py-2 rounded-full font-semibold hover:bg-blue-900 transition">
+        <button className="bg-gradient-to-r from-[#3B4B96] to-[#FF5722] text-white px-6 py-2.5 rounded-xl hover:from-[#2C3A7D] hover:to-[#E64A19] transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-semibold">
           Details <ArrowRight size={18} />
         </button>
-        <button className="flex items-center gap-1 text-white bg-blue-900 px-4 py-2 rounded-full font-semibold hover:bg-blue-900 transition">
+        <button className="bg-gradient-to-r from-[#3B4B96] to-[#FF5722] text-white px-6 py-2.5 rounded-xl hover:from-[#2C3A7D] hover:to-[#E64A19] transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-semibold">
           Book Now <ArrowRight size={18} />
         </button>
       </div>

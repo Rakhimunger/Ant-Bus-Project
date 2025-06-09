@@ -1,10 +1,14 @@
 import React from "react";
-import HeaderPage from "../Components/HeaderPage";
+import MiniPage from "../Components/MiniPage";
+import CardsBuses from "../Pages/CardsBuses";
+import BookBusHire from "../Pages/BookBusHire";
 
 const CarHirePage = () => {
   return (
     <div>
-      <HeaderPage />
+      <MiniPage />
+      <CardsBuses />
+      <BookBusHire />
     </div>
   );
 };

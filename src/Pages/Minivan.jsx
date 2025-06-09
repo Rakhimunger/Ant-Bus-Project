@@ -99,6 +99,7 @@ const buses = [
     outstationPrice: "₹14200/-",
     image: minivan,
   },
+  // ... repeat as needed ...
 ];
 
 const Minivan = ({
@@ -136,10 +137,10 @@ const Minivan = ({
         </span>
       </p>
       <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-3 pt-4 w-full">
-        <button className="flex items-center gap-1 text-white bg-blue-800 px-4 py-2 rounded-full font-semibold hover:bg-blue-900 transition">
+        <button className="flex items-center gap-1 text-white bg-gradient-to-r from-[#3B4B96] to-[#FF5722] px-4 py-2 rounded-xl font-semibold hover:from-[#2C3A7D] hover:to-[#E64A19] transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
           Details <ArrowRight size={18} />
         </button>
-        <button className="flex items-center gap-1 text-white bg-blue-800 px-4 py-2 rounded-full font-semibold hover:bg-blue-900 transition">
+        <button className="flex items-center gap-1 text-white bg-gradient-to-r from-[#3B4B96] to-[#FF5722] px-4 py-2 rounded-xl font-semibold hover:from-[#2C3A7D] hover:to-[#E64A19] transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
           Book Now <ArrowRight size={18} />
         </button>
       </div>
