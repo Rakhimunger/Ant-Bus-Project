@@ -9,6 +9,7 @@ import {
   Phone,
   MapPin,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -43,17 +44,22 @@ const Footer = () => {
           </h3>
           <ul className="space-y-2 text-sm text-gray-800">
             {[
-              "Home",
-              "AC Delux Bus Hire",
-              "AC Luxury Bus Hire",
-              "AC Super Bus Hire",
-              "AC Delux Minivan Hire",
-              "AC Luxury Minivan Hire",
-              "Sedan / Hatchback Car Hire",
-              "SUV / MUV Car Hire",
+              { name: "Home", link: "/" },
+              { name: "AC Delux Bus Hire", link: "/ac-delux-bus" },
+              { name: "AC Luxury Bus Hire", link: "/ac-luxury-bus" },
+              { name: "AC Super Bus Hire", link: "/ac-super-bus" },
+              { name: "AC Delux Minivan Hire", link: "/ac-delux-minivan" },
+              { name: "AC Luxury Minivan Hire", link: "/ac-luxury-minivan" },
+              { name: "Sedan / Hatchback Car Hire", link: "/sedan-car" },
+              { name: "SUV / MUV Car Hire", link: "/suv-car" },
             ].map((item, idx) => (
-              <li key={idx} className="hover:text-blue-900 cursor-pointer">
-                › {item}
+              <li key={idx}>
+                <Link
+                  to={item.link}
+                  className="hover:text-blue-900 cursor-pointer block"
+                >
+                  › {item.name}
+                </Link>
               </li>
             ))}
           </ul>
@@ -64,16 +70,21 @@ const Footer = () => {
           <h3 className="text-lg text-blue-900 font-semibold mb-4">Company</h3>
           <ul className="space-y-2 text-sm text-gray-800">
             {[
-              "Become Bus Operator",
-              "About Us",
-              "Contact Us",
-              "Site Map",
-              "Gallery",
-              "Terms & Conditions",
-              "Policy",
+              { name: "Become Bus Operator", link: "/become-operator" },
+              { name: "About Us", link: "/about" },
+              { name: "Contact Us", link: "/contact" },
+              { name: "Site Map", link: "/sitemap" },
+              { name: "Gallery", link: "/gallery" },
+              { name: "Terms & Conditions", link: "/terms" },
+              { name: "Policy", link: "/policy" },
             ].map((item, idx) => (
-              <li key={idx} className="hover:text-blue-900 cursor-pointer">
-                › {item}
+              <li key={idx}>
+                <Link
+                  to={item.link}
+                  className="hover:text-blue-900 cursor-pointer block"
+                >
+                  › {item.name}
+                </Link>
               </li>
             ))}
           </ul>
