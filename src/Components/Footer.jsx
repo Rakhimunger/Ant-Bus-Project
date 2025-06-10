@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import image from "../assets/images/image.png";
 import logo from "../assets/images/logo.png";
 import {
   Facebook,
@@ -128,10 +129,7 @@ const Footer = () => {
         </p>
         <div className="flex items-center space-x-3 mt-3 md:mt-0">
           <span>We Accept</span>
-          <img src="/visa.png" alt="Visa" className="h-5" />
-          <img src="/mastercard.png" alt="Mastercard" className="h-5" />
-          <img src="/paypal.png" alt="Paypal" className="h-5" />
-          <img src="/applepay.png" alt="Apple Pay" className="h-5" />
+          <img src={image} alt="Image" />
         </div>
       </div>
     </footer>
