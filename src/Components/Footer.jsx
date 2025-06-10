@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 import {
   Facebook,
@@ -9,7 +10,6 @@ import {
   Phone,
   MapPin,
 } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -44,21 +44,21 @@ const Footer = () => {
           </h3>
           <ul className="space-y-2 text-sm text-gray-800">
             {[
-              { name: "Home", link: "/" },
-              { name: "AC Delux Bus Hire", link: "/ac-delux-bus" },
-              { name: "AC Luxury Bus Hire", link: "/ac-luxury-bus" },
-              { name: "AC Super Bus Hire", link: "/ac-super-bus" },
-              { name: "AC Delux Minivan Hire", link: "/ac-delux-minivan" },
-              { name: "AC Luxury Minivan Hire", link: "/ac-luxury-minivan" },
-              { name: "Sedan / Hatchback Car Hire", link: "/sedan-car" },
-              { name: "SUV / MUV Car Hire", link: "/suv-car" },
+              { label: "Home", to: "/home" },
+              { label: "AC Delux Bus Hire", to: "/ac-delux-bus" },
+              { label: "AC Luxury Bus Hire", to: "/ac-luxury-bus" },
+              { label: "AC Super Bus Hire", to: "/ac-super-bus" },
+              { label: "AC Delux Minivan Hire", to: "/ac-delux-minivan" },
+              { label: "AC Luxury Minivan Hire", to: "/ac-luxury-minivan" },
+              { label: "Sedan / Hatchback Car Hire", to: "/sedan-hatchback" },
+              { label: "SUV / MUV Car Hire", to: "/suv-muv" },
             ].map((item, idx) => (
               <li key={idx}>
                 <Link
-                  to={item.link}
-                  className="hover:text-blue-900 cursor-pointer block"
+                  to={item.to}
+                  className="hover:text-blue-900 transition-colors duration-200"
                 >
-                  › {item.name}
+                  › {item.label}
                 </Link>
               </li>
             ))}
@@ -70,20 +70,20 @@ const Footer = () => {
           <h3 className="text-lg text-blue-900 font-semibold mb-4">Company</h3>
           <ul className="space-y-2 text-sm text-gray-800">
             {[
-              { name: "Become Bus Operator", link: "/become-operator" },
-              { name: "About Us", link: "/about" },
-              { name: "Contact Us", link: "/contact" },
-              { name: "Site Map", link: "/sitemap" },
-              { name: "Gallery", link: "/gallery" },
-              { name: "Terms & Conditions", link: "/terms" },
-              { name: "Policy", link: "/policy" },
+              { label: "Become Bus Operator", to: "/become-operator" },
+              { label: "About Us", to: "/about" },
+              { label: "Contact Us", to: "/contact" },
+              { label: "Site Map", to: "/sitemap" },
+              { label: "Gallery", to: "/gallery" },
+              { label: "Terms & Conditions", to: "/terms" },
+              { label: "Policy", to: "/policy" },
             ].map((item, idx) => (
               <li key={idx}>
                 <Link
-                  to={item.link}
-                  className="hover:text-blue-900 cursor-pointer block"
+                  to={item.to}
+                  className="hover:text-blue-900 transition-colors duration-200"
                 >
-                  › {item.name}
+                  › {item.label}
                 </Link>
               </li>
             ))}
