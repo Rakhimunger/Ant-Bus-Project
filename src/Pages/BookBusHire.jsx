@@ -3,7 +3,7 @@ import { BusFront, CalendarCheck2, UserCheck } from "lucide-react";
 
 const BookBusHire = () => {
   return (
-    <div className="bg-gradient-to-b from-white via-blue-50 to-white min-h-screen px-4 py-8 sm:px-8 lg:px-20 font-poppins">
+    <div className="bg-gradient-to-b from-white via-blue-50 to-white px-4 py-8 sm:px-8 lg:px-20 font-poppins">
       {/* Main Heading */}
       <div className="text-center mb-8 px-3 max-w-3xl mx-auto">
         <h1 className="text-3xl sm:text-4xl font-extrabold text-blue-900 leading-tight tracking-wide">
@@ -16,7 +16,7 @@ const BookBusHire = () => {
         </p>
       </div>
 
-      {/* Content Section */}
+      {/* Description Section */}
       <div className="max-w-4xl mx-auto space-y-5 text-gray-700 text-base leading-relaxed text-justify px-3 tracking-wide">
         <p>
           To book your bus on A N T, simply fill in the required information in
@@ -37,7 +37,7 @@ const BookBusHire = () => {
         </p>
       </div>
 
-      {/* Highlights */}
+      {/* Highlights Section */}
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto px-3">
         {[
           {
@@ -74,7 +74,7 @@ const BookBusHire = () => {
       </div>
 
       {/* CTA Button */}
-      <div className="mt-8 text-center px-3">
+      <div className="mt-10 text-center px-3">
         <button className="bg-gradient-to-r from-[#3B4B96] to-[#FF5722] text-white font-semibold text-base sm:text-lg py-3 sm:py-4 px-12 sm:px-14 rounded-full shadow-lg transition-transform duration-300 hover:scale-105 active:scale-95 focus:outline-none focus:ring-4 focus:ring-[#E64A19] hover:from-[#2C3A7D] hover:to-[#E64A19]">
           Explore Booking Options
         </button>

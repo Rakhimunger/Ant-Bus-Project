@@ -1,5 +1,5 @@
-import React from "react";
-import BusHeader from "../Pages/BusHeader";
+// In BusTicketPage.jsx
+import BusHeader from "../Components/BusTicketHeader";
 
 const BusTicketPage = () => {
   return (

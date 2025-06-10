@@ -2,108 +2,24 @@ import React from "react";
 import { ArrowRight } from "lucide-react";
 import antbus from "../assets/images/antbus.jpg";
 
-const buses = [
-  {
-    title: "AC Delux Bus 49 Seater (2+2)",
-    city: "Delhi NCR",
-    localRun: "4 Hours 40 km",
-    localPrice: "₹14200/-",
-    outstationPrice: "₹14200/-",
-    image: antbus,
-  },
-  {
-    title: "AC Delux Bus 49 Seater (2+2)",
-    city: "Delhi NCR",
-    localRun: "4 Hours 40 km",
-    localPrice: "₹14200/-",
-    outstationPrice: "₹14200/-",
-    image: antbus,
-  },
-  {
-    title: "AC Delux Bus 49 Seater (2+2)",
-    city: "Delhi NCR",
-    localRun: "4 Hours 40 km",
-    localPrice: "₹14200/-",
-    outstationPrice: "₹14200/-",
-    image: antbus,
-  },
-  {
-    title: "AC Delux Bus 49 Seater (2+2)",
-    city: "Delhi NCR",
-    localRun: "4 Hours 40 km",
-    localPrice: "₹14200/-",
-    outstationPrice: "₹14200/-",
-    image: antbus,
-  },
-  {
-    title: "AC Delux Bus 49 Seater (2+2)",
-    city: "Delhi NCR",
-    localRun: "4 Hours 40 km",
-    localPrice: "₹14200/-",
-    outstationPrice: "₹14200/-",
-    image: antbus,
-  },
-  {
-    title: "AC Delux Bus 49 Seater (2+2)",
-    city: "Delhi NCR",
-    localRun: "4 Hours 40 km",
-    localPrice: "₹14200/-",
-    outstationPrice: "₹14200/-",
-    image: antbus,
-  },
-  {
-    title: "AC Delux Bus 49 Seater (2+2)",
-    city: "Delhi NCR",
-    localRun: "4 Hours 40 km",
-    localPrice: "₹14200/-",
-    outstationPrice: "₹14200/-",
-    image: antbus,
-  },
-  {
-    title: "AC Delux Bus 49 Seater (2+2)",
-    city: "Delhi NCR",
-    localRun: "4 Hours 40 km",
-    localPrice: "₹14200/-",
-    outstationPrice: "₹14200/-",
-    image: antbus,
-  },
-  {
-    title: "AC Delux Bus 49 Seater (2+2)",
-    city: "Delhi NCR",
-    localRun: "4 Hours 40 km",
-    localPrice: "₹14200/-",
-    outstationPrice: "₹14200/-",
-    image: antbus,
-  },
-  {
-    title: "AC Delux Bus 49 Seater (2+2)",
-    city: "Delhi NCR",
-    localRun: "4 Hours 40 km",
-    localPrice: "₹14200/-",
-    outstationPrice: "₹14200/-",
-    image: antbus,
-  },
-  {
-    title: "AC Delux Bus 49 Seater (2+2)",
-    city: "Delhi NCR",
-    localRun: "4 Hours 40 km",
-    localPrice: "₹14200/-",
-    outstationPrice: "₹14200/-",
-    image: antbus,
-  },
-  {
-    title: "AC Delux Bus 49 Seater (2+2)",
-    city: "Delhi NCR",
-    localRun: "4 Hours 40 km",
-    localPrice: "₹14200/-",
-    outstationPrice: "₹14200/-",
-    image: antbus,
-  },
-];
+// 🌀 Swiper imports
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/autoplay";
+import { Autoplay } from "swiper/modules";
 
+// 🚍 Bus data
+const buses = new Array(12).fill({
+  title: "AC Delux Bus 49 Seater (2+2)",
+  localRun: "4 Hours 40 km",
+  localPrice: "₹14200/-",
+  outstationPrice: "₹14200/-",
+  image: antbus,
+});
+
+// 🎴 Card component
 const CardsBuses = ({
   title,
-  city,
   localRun,
   localPrice,
   outstationPrice,
@@ -117,10 +33,7 @@ const CardsBuses = ({
     />
     <div className="p-5 space-y-2 text-sm sm:text-base flex flex-col items-center sm:items-start text-center sm:text-left">
       <h3 className="text-xl font-bold text-blue-900">{title}</h3>
-      <p>
-        <span className="font-medium">City :</span>{" "}
-        <span className="text-orange-600 font-bold">{city}</span>
-      </p>
+
       <p>
         <span className="font-medium">Local Run starting from:</span>
         <br />
@@ -135,6 +48,7 @@ const CardsBuses = ({
           Per km : {outstationPrice}
         </span>
       </p>
+
       <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-3 pt-4 w-full">
         <button className="bg-gradient-to-r from-[#3B4B96] to-[#FF5722] text-white px-6 py-2.5 rounded-xl hover:from-[#2C3A7D] hover:to-[#E64A19] transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-semibold">
           Details <ArrowRight size={18} />
@@ -147,13 +61,35 @@ const CardsBuses = ({
   </div>
 );
 
+// 📄 Page component
 export default function BusList() {
   return (
-    <div className="bg-gradient-to-br from-white via-blue-50 to-blue-100 min-h-screen px-4 py-10 sm:px-6 lg:px-20">
+    <div className="bg-gradient-to-br from-white via-blue-50 to-blue-100 px-4 py-6 sm:px-6 lg:px-20">
       <h2 className="text-center text-3xl sm:text-4xl font-extrabold text-blue-900 mb-10">
         Our Available Buses
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      {/* 📱 Mobile View: Swiper Auto Slider */}
+      <div className="block sm:hidden">
+        <Swiper
+          modules={[Autoplay]}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          loop={true}
+          spaceBetween={0}
+          slidesPerView={1}
+          centeredSlides={false}
+          className="pb-6"
+        >
+          {buses.map((bus, index) => (
+            <SwiperSlide key={index}>
+              <CardsBuses {...bus} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+
+      {/* 💻 Desktop & Tablet View: 3-card Grid */}
+      <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {buses.map((bus, index) => (
           <CardsBuses key={index} {...bus} />
         ))}
