@@ -17,7 +17,7 @@ const buses = new Array(12).fill({
   image: antbus,
 });
 
-// 🎴 Card component
+// 🎴 Card component (same layout as Minivan)
 const CardsBuses = ({
   title,
   localRun,
@@ -31,7 +31,7 @@ const CardsBuses = ({
       alt={title}
       className="h-52 w-full object-cover transform -scale-x-100"
     />
-    <div className="p-5 space-y-2 text-sm sm:text-base flex flex-col items-center sm:items-start text-center sm:text-left">
+    <div className="p-5 space-y-2 text-sm sm:text-base flex flex-col items-start text-left">
       <h3 className="text-xl font-bold text-blue-900">{title}</h3>
 
       <p>
@@ -41,6 +41,7 @@ const CardsBuses = ({
           {localRun} : {localPrice}
         </span>
       </p>
+
       <p>
         <span className="font-medium">Outstation Run starting from:</span>
         <br />
@@ -49,7 +50,8 @@ const CardsBuses = ({
         </span>
       </p>
 
-      <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-3 pt-4 w-full">
+      {/* ✅ Same button layout as Minivan */}
+      <div className="flex justify-between items-center gap-3 pt-4 w-full">
         <button className="bg-gradient-to-r from-[#3B4B96] to-[#FF5722] text-white px-6 py-2.5 rounded-xl hover:from-[#2C3A7D] hover:to-[#E64A19] transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-semibold">
           Details <ArrowRight size={18} />
         </button>
@@ -77,7 +79,6 @@ export default function BusList() {
           loop={true}
           spaceBetween={0}
           slidesPerView={1}
-          centeredSlides={false}
           className="pb-6"
         >
           {buses.map((bus, index) => (
