@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import mobifest from "../assets/images/mobifest.jpg";
+import discount from "../assets/images/discount.jpg";
 
 const Offers = () => {
   return (
@@ -44,7 +44,7 @@ const Offers = () => {
               className="flex-shrink-0 w-[280px] sm:w-[300px] rounded-3xl p-0 cursor-pointer overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 float-animation"
             >
               <img
-                src={mobifest}
+                src={discount}
                 alt="MobiKwik Offer"
                 className="w-full h-40 object-cover rounded-3xl"
                 loading="lazy"
