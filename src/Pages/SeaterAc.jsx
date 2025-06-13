@@ -2,8 +2,8 @@ import React from "react";
 
 const SeaterAc = () => {
   return (
-    <div className="bg-white py-10 px-5 sm:px-8 md:px-14 max-w-screen-lg mx-auto text-gray-800 text-sm sm:text-base space-y-6 leading-relaxed shadow-xl rounded-2xl">
-      <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center text-blue-800 mb-6 border-b-2 border-blue-200 pb-4">
+    <div className="bg-white py-10 px-4 sm:px-6 md:px-14 max-w-screen-lg mx-auto text-gray-800 text-sm sm:text-base space-y-6 leading-relaxed shadow-xl rounded-2xl">
+      <h3 className="text-xl sm:text-3xl md:text-4xl font-extrabold text-center text-blue-800 mb-6 border-b-2 border-blue-200 pb-4">
         27 Seater AC Deluxe Coach - Local & Outstation Bus Hire in Noida, Delhi
         NCR
       </h3>
@@ -110,8 +110,8 @@ const SeaterAc = () => {
         seats.
       </p>
 
-      <div className="pt-6 text-center">
-        <button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold text-base sm:text-lg px-6 py-3 rounded-lg shadow-md transition-all">
+      <div className="pt-4 sm:pt-6 text-center">
+        <button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold text-sm sm:text-base px-6 py-2 sm:py-3 rounded-md sm:rounded-lg shadow-md transition-all">
           Book Now
         </button>
       </div>
