@@ -1,11 +1,11 @@
 import React from "react";
 import HomePage from "../Pages/HomePage";
-import TreandingPage from "../Pages/TreandingPage";
+import Offers from "../Pages/Offers";
 const Home = () => {
   return (
     <div>
       <HomePage />
-      <TreandingPage />
+      <Offers />
     </div>
   );
 };

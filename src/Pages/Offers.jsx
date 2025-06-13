@@ -2,7 +2,7 @@ import React from "react";
 import { ArrowRight } from "lucide-react";
 import mobifest from "../assets/images/mobifest.jpg";
 
-const TrendingOffers = () => {
+const Offers = () => {
   return (
     <>
       <style>
@@ -57,4 +57,4 @@ const TrendingOffers = () => {
   );
 };
 
-export default TrendingOffers;
+export default Offers;
