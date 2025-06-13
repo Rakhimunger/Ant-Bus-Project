@@ -1,7 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import discount from "../assets/images/discount.jpg";
-
+import discount from "../../assets/images/discount.jpg";
 const Offers = () => {
   return (
     <>
