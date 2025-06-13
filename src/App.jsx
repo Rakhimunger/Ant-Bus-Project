@@ -2,17 +2,17 @@
 import React from "react";
 import Navbar from "./Components/Navbar";
 import { Route, Routes } from "react-router-dom";
-import BusHirePage from "./Pages/BusHirePage";
+import BusHirePage from "./Pages/BusHirePages/BusHirePage";
 import MiniVanPage from "./Pages/MiniVanPage";
 import CarHirePage from "./Pages/CarHirePage";
 import BusTicketPage from "./Pages/BusTicketPage";
 import BusTourPage from "./Pages/BusTourPage";
 import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
-import AcLuxuryBusHire from "./Pages/AcLuxuryBusHire";
-import AcDeluxeBusHire from "./Pages/AcDeluxeBusHire";
+import AcLuxuryBusHire from "./Pages/BusHirePages/AcLuxuryBusHire";
+import AcDeluxeBusHire from "./Pages/BusHirePages/AcDeluxeBusHire";
 import Details from "./Pages/Details";
-import AcSleeperBusHire from "./Pages/AcSleeperBusHire";
+import AcSleeperBusHire from "./Pages/BusHirePages/AcSleeperBusHire";
 
 const App = () => {
   return (

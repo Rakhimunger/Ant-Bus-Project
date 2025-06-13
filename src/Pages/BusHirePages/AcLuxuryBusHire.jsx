@@ -1,12 +1,12 @@
 import React from "react";
-import Acluxury from "../Pages/AcLuxury";
-import BookBusant from "../Pages/BookBusant";
-import HeaderPage from "../Components/HeaderPage";
+import Acluxury from "./AcLuxury";
+import BookBusant from "./BookBusant";
+import BusHeaderPage from "./BusHeaderPage";
 
 function AcLuxuryBusHire() {
   return (
     <div>
-      <HeaderPage />
+      <BusHeaderPage />
       <Acluxury />
       <BookBusant />
     </div>

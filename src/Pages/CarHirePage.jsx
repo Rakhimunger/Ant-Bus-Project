@@ -1,7 +1,7 @@
 import React from "react";
 import MiniPage from "../Components/MiniPage";
-import AcDeluxeBusHire from "../Pages/AcDeluxeBusHire";
-import BookBusant from "./BookBusant";
+import AcDeluxeBusHire from "./BusHirePages/AcDeluxeBusHire";
+import BookBusant from "./BusHirePages/BookBusant";
 
 const CarHirePage = () => {
   return (

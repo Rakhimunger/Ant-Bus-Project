@@ -1,11 +1,11 @@
 import React from "react";
-import AcDeluxBus from "../Pages/AcDeluxBus";
-import BookBusant from "../Pages/BookBusant";
-import HeaderPage from "../Components/HeaderPage";
+import AcDeluxBus from "./AcDeluxBus";
+import BookBusant from "./BookBusant";
+import BusHeaderPage from "./BusHeaderPage";
 function AcDeluxeBusHire() {
   return (
     <div>
-      <HeaderPage />
+      <BusHeaderPage />
       <AcDeluxBus />
       <BookBusant />
     </div>

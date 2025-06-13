@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import antbus from "../assets/images/antbus.jpg";
+import antbus from "../../assets/images/antbus.jpg";
 
 const ACBusDetail = () => {
   return (

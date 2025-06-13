@@ -48,7 +48,7 @@ const Footer = () => {
               { label: "Home", to: "/home" },
               { label: "AC Delux Bus Hire", to: "/ac-delux-bus" },
               { label: "AC Luxury Bus Hire", to: "/ac-luxury-bus" },
-              { label: "AC Sleeper Bus Hire", to: "/ac-sleeper-bus" },
+              { label: "AC Bus Hire", to: "/ac-sleeper-bus" },
               { label: "AC Delux Minivan Hire", to: "/ac-delux-minivan" },
               { label: "AC Luxury Minivan Hire", to: "/ac-luxury-minivan" },
               { label: "Sedan / Hatchback Car Hire", to: "/sedan-hatchback" },

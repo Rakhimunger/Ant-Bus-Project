@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import antbus from "../assets/images/antbus.jpg";
+import antbus from "../../assets/images/antbus.jpg";
 import { Link } from "react-router-dom";
 
 // 🌀 Swiper imports
@@ -10,8 +10,8 @@ import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 
 // 🚍 Bus data
-const buses = new Array(12).fill({
-  title: "AC Delux Bus 49 Seater (2+2)",
+const buses = new Array(6).fill({
+  title: "AC Luxury Bus 49 Seater (2+2)",
   localRun: "4 Hours 40 km",
   localPrice: "₹14200/-",
   outstationPrice: "₹14200/-",

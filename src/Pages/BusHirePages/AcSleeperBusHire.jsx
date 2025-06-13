@@ -1,11 +1,11 @@
 import React from "react";
-import AcSleeper from "../Pages/AcSleeper";
-import BookBusant from "../Pages/BookBusant";
-import HeaderPage from "../Components/HeaderPage";
+import AcSleeper from "./AcSleeper";
+import BookBusant from "./BookBusant";
+import BusHeaderPage from "./BusHeaderPage";
 function AcSleeperBusHire() {
   return (
     <div>
-      <HeaderPage />
+      <BusHeaderPage />
       <AcSleeper />
       <BookBusant />
     </div>

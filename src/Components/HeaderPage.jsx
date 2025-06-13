@@ -14,7 +14,7 @@ const MiniPage = () => {
           <h1 className="text-lg sm:text-5xl font-bold leading-tight sm:mb-2 mb-1">
             Bus Hire
           </h1>
-          <p className="text-xs sm:text-lg leading-none">Home &rarr; Minivan</p>
+          <p className="text-xs sm:text-lg leading-none">Home &rarr; Hire</p>
         </div>
       </div>
     </div>
