@@ -1,12 +1,11 @@
 import React from "react";
-import MiniPage from "../Components/MiniPage";
+
 import AcDeluxeBusHire from "./BusHirePages/AcDeluxeBusHire";
 import BookBusant from "./BusHirePages/BookBusant";
 
 const CarHirePage = () => {
   return (
     <div>
-      <MiniPage />
       <AcDeluxeBusHire />
       <BookBusant />
     </div>

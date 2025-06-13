@@ -2,26 +2,26 @@ import React from "react";
 
 const SeaterAc = () => {
   return (
-    <div className="bg-white py-10 px-4 sm:px-6 md:px-14 max-w-screen-lg mx-auto text-gray-800 text-sm sm:text-base space-y-6 leading-relaxed shadow-xl rounded-2xl">
+    <div className="bg-white font-bold py-10 px-4 sm:px-6 md:px-14 max-w-screen-lg mx-auto text-gray-800 text-sm sm:text-base space-y-6 leading-relaxed shadow-xl rounded-2xl">
       <h3 className="text-xl sm:text-3xl md:text-4xl font-extrabold text-center text-blue-800 mb-6 border-b-2 border-blue-200 pb-4">
         27 Seater AC Deluxe Coach - Local & Outstation Bus Hire in Noida, Delhi
         NCR
       </h3>
 
-      <p>
+      <p className="font-bold">
         ANT Travels offers premium bus services within and outside Delhi NCR,
         combining comfort, safety, and affordability. Our coaches are
         professionally maintained and sanitized after every trip, ensuring
         top-notch quality and reliability.
       </p>
 
-      <p>
+      <p className="font-bold">
         Whether it's a wedding, school tour, corporate event, or Char Dham yatra
         — this 27-seater luxury bus provides the ideal experience for group
         travel at budget rates.
       </p>
 
-      <p>
+      <p className="font-bold">
         Enjoy seamless journeys with wide seating, large luggage space, doorstep
         pickup, and professional drivers.
       </p>
@@ -41,7 +41,7 @@ const SeaterAc = () => {
         ))}
       </ul>
 
-      <p>
+      <p className="font-bold">
         ANT Travels provides excellent bus services for bus travel for purposes
         within and outside Delhi NCR. Bus fares at ANT Travels can be easily
         availed on the online bus booking section. Our online bus booking
@@ -50,7 +50,7 @@ const SeaterAc = () => {
         cost of luxury coach hire or bus fare in Delhi NCR.
       </p>
 
-      <p>
+      <p className="font-bold">
         The bus price per km in Delhi NCR is the best compared to any bus fare
         price on any portal. At ANT Travels we ensure that your luxury bus is
         cleaned and well serviced after each ride when you book a bus for a day
@@ -64,7 +64,7 @@ const SeaterAc = () => {
         budget.
       </p>
 
-      <p>
+      <p className="font-bold">
         Our 27-seater coach hire in Noida always provides the best travel
         experience as our luxury coach services in Delhi NCR have been voted
         many times as the best coach hire or rental in Bangalore. 30-seater AC
@@ -74,7 +74,7 @@ const SeaterAc = () => {
         features.
       </p>
 
-      <p>
+      <p className="font-bold">
         27-seater bus rentals in Delhi NCR are the most popular option for
         traveling as a family. Choose a 27-seater luxury bus hire in Delhi NCR
         if one wishes to hire a bus to ride within the city limits. The bus
@@ -86,7 +86,7 @@ const SeaterAc = () => {
         journey planning simpler.
       </p>
 
-      <p>
+      <p className="font-bold">
         One can access ample space for luggage and don't have to worry about
         safety on booking a 27-seater bus service in Delhi NCR. Deluxe and
         luxury bus fares or rental rates can be viewed on our website for bus
@@ -99,7 +99,7 @@ const SeaterAc = () => {
         summers. Get the best bus rental services to make every ride memorable.
       </p>
 
-      <p>
+      <p className="font-bold">
         Now you can get complete bus booking for wedding, party, picnic, event
         and school tour at the most reasonable and unbeatable price. Bus booking
         for travelling to Char Dham with family or friends can be selected as

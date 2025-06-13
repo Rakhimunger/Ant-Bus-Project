@@ -10,14 +10,14 @@ const BookBusant = () => {
           Book Bus Hire with{" "}
           <span className="text-blue-700 drop-shadow-md">ANT</span>
         </h1>
-        <p className="text-gray-600 mt-4 text-sm sm:text-base max-w-xl mx-auto font-medium">
+        <p className="text-black mt-4 text-sm sm:text-base max-w-xl mx-auto font-medium">
           A N T lets you book buses from anywhere in Delhi/NCR at the lowest
           prices
         </p>
       </div>
 
       {/* Description Section */}
-      <div className="max-w-4xl mx-auto space-y-5 text-gray-700 text-base leading-relaxed text-justify px-3 tracking-wide">
+      <div className="max-w-4xl mx-auto space-y-5 text-black text-base leading-relaxed text-justify px-3 tracking-wide">
         <p>
           To book your bus on A N T, simply fill in the required information in
           the required fields and customize your journey. A N T gives you the
@@ -29,7 +29,7 @@ const BookBusant = () => {
           the facility to choose your favorite bus from all the buses available.
         </p>
 
-        <p className="text-gray-600 italic font-light">
+        <p className="text-black italic font-light">
           Thanks to our autofill function, you never need to enter your details
           when booking a bus again. Advanced passenger details forecast will
           prompt profile information based on your past booking reservation

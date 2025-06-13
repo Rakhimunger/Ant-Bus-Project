@@ -9,7 +9,7 @@ import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 
 // 🚐 Minivan data
-const minivans = new Array(12).fill({
+const minivans = new Array(6).fill({
   title: "AC Delux Minivan 49 Seater (2+2)",
   city: "Delhi NCR",
   localRun: "4 Hours 40 km",
