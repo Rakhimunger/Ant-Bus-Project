@@ -1,7 +1,7 @@
 import React from "react";
 import { BusFront, CalendarCheck2, UserCheck } from "lucide-react";
 
-const BookBusHire = () => {
+const AcDeluxeBusHire = () => {
   return (
     <div className="bg-gradient-to-b from-white via-blue-50 to-white px-4 py-8 sm:px-8 lg:px-20 font-poppins">
       {/* Main Heading */}
@@ -83,4 +83,4 @@ const BookBusHire = () => {
   );
 };
 
-export default BookBusHire;
+export default AcDeluxeBusHire;

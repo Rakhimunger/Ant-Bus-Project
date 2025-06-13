@@ -10,6 +10,8 @@ import BusTourPage from "./Pages/BusTourPage";
 import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
 
+import Details from "./Pages/Details";
+
 const App = () => {
   return (
     <div>
@@ -21,6 +23,8 @@ const App = () => {
         <Route path="/bus-ticket" element={<BusTicketPage />} />
         <Route path="/bus-tour" element={<BusTourPage />} />
         <Route path="/home" element={<Home />} />
+
+        <Route path="/details" element={<Details />} />
       </Routes>
 
       <Footer />

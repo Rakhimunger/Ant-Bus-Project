@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import antbus from "../assets/images/antbus.jpg";
+import { Link } from "react-router-dom";
 
 // 🌀 Swiper imports
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -17,7 +18,7 @@ const buses = new Array(12).fill({
   image: antbus,
 });
 
-// 🎴 Card component (same layout as Minivan)
+// 🎴 Card component
 const CardsBuses = ({
   title,
   localRun,
@@ -25,7 +26,7 @@ const CardsBuses = ({
   outstationPrice,
   image,
 }) => (
-  <div className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden transition duration-300 hover:shadow-2xl hover:scale-[1.02]">
+  <div className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden transition duration-300 hover:shadow-2xl hover:scale-[1.02] mx-auto px-3 sm:px-0 max-w-[95%]">
     <img
       src={image}
       alt={title}
@@ -50,14 +51,19 @@ const CardsBuses = ({
         </span>
       </p>
 
-      {/* ✅ Same button layout as Minivan */}
-      <div className="flex justify-between items-center gap-3 pt-4 w-full">
-        <button className="bg-gradient-to-r from-[#3B4B96] to-[#FF5722] text-white px-6 py-2.5 rounded-xl hover:from-[#2C3A7D] hover:to-[#E64A19] transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-semibold">
-          Details <ArrowRight size={18} />
-        </button>
-        <button className="bg-gradient-to-r from-[#3B4B96] to-[#FF5722] text-white px-6 py-2.5 rounded-xl hover:from-[#2C3A7D] hover:to-[#E64A19] transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-semibold">
-          Book Now <ArrowRight size={18} />
-        </button>
+      {/* ✅ Buttons aligned left and right for mobile */}
+      <div className="flex flex-row justify-between gap-3 pt-4 w-full sm:flex-row sm:justify-between">
+        <Link to="/details" className="w-1/2">
+          <button className="bg-gradient-to-r from-[#3B4B96] to-[#FF5722] text-white px-4 py-2 rounded-xl hover:from-[#2C3A7D] hover:to-[#E64A19] transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-semibold text-sm sm:text-base w-full">
+            Details <ArrowRight size={16} className="ml-1" />
+          </button>
+        </Link>
+
+        <div className="w-1/2 flex justify-end">
+          <button className="bg-gradient-to-r from-[#3B4B96] to-[#FF5722] text-white px-4 py-2 rounded-xl hover:from-[#2C3A7D] hover:to-[#E64A19] transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-semibold text-sm sm:text-base w-full">
+            Book Now <ArrowRight size={16} className="ml-1" />
+          </button>
+        </div>
       </div>
     </div>
   </div>

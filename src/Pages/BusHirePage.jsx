@@ -1,13 +1,13 @@
 import React from "react";
 import HeaderPage from "../Components/HeaderPage";
 import CardsBuses from "../Pages/CardsBuses";
-import BookBusHire from "../Pages/BookBusHire";
+import AcDeluxeBusHire from "../Pages/AcDeluxeBusHire";
 const BusHirePage = () => {
   return (
     <div>
       <HeaderPage />
       <CardsBuses />
-      <BookBusHire />
+      <AcDeluxeBusHire />
     </div>
   );
 };

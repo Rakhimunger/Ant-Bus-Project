@@ -1,14 +1,14 @@
 import React from "react";
 import Minivan from "../Pages/Minivan";
 import MiniPage from "../Components/MiniPage";
-import BookBusHire from "./BookBusHire";
+import AcDeluxeBusHire from "./AcDeluxeBusHire";
 
 const MiniVanPage = () => {
   return (
     <div>
       <MiniPage />
       <Minivan />
-      <BookBusHire />
+      <AcDeluxeBusHire />
     </div>
   );
 };
