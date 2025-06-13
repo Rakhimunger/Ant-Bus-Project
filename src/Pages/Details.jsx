@@ -4,6 +4,8 @@ import SeaterAc from "../Pages/SeaterAc";
 import ACBusDetail from "../Pages/ACBusDetail";
 import BusTariffPage from "../Pages/BusTariffPage";
 import GallerySection from "./GallerySection";
+import Facilities from "../Pages/Facilities";
+import AcDeluxBus from "../Pages/AcDeluxBus";
 
 const Details = () => {
   return (
@@ -13,7 +15,9 @@ const Details = () => {
 
       <SeaterAc />
       <BusTariffPage />
+      <Facilities />
       <GallerySection />
+      <AcDeluxBus />
     </div>
   );
 };

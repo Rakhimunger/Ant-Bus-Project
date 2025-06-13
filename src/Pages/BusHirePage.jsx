@@ -1,13 +1,14 @@
 import React from "react";
 import HeaderPage from "../Components/HeaderPage";
-import CardsBuses from "../Pages/CardsBuses";
-import AcDeluxeBusHire from "../Pages/AcDeluxeBusHire";
+import AcDeluxBus from "../Pages/AcDeluxBus";
+import BookBusant from "../Pages/BookBusant";
+
 const BusHirePage = () => {
   return (
     <div>
       <HeaderPage />
-      <CardsBuses />
-      <AcDeluxeBusHire />
+      <AcDeluxBus />
+      <BookBusant />
     </div>
   );
 };

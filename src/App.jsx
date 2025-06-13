@@ -9,8 +9,10 @@ import BusTicketPage from "./Pages/BusTicketPage";
 import BusTourPage from "./Pages/BusTourPage";
 import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
-
+import AcLuxuryBusHire from "./Pages/AcLuxuryBusHire";
+import AcDeluxeBusHire from "./Pages/AcDeluxeBusHire";
 import Details from "./Pages/Details";
+import AcSleeperBusHire from "./Pages/AcSleeperBusHire";
 
 const App = () => {
   return (
@@ -23,8 +25,10 @@ const App = () => {
         <Route path="/bus-ticket" element={<BusTicketPage />} />
         <Route path="/bus-tour" element={<BusTourPage />} />
         <Route path="/home" element={<Home />} />
-
         <Route path="/details" element={<Details />} />
+        <Route path="/ac-delux-bus" element={<AcDeluxeBusHire />} />
+        <Route path="/ac-luxury-bus" element={<AcLuxuryBusHire />} />
+        <Route path="/ac-sleeper-bus" element={<AcSleeperBusHire />} />
       </Routes>
 
       <Footer />
