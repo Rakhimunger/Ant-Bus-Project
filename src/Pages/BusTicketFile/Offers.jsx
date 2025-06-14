@@ -18,15 +18,15 @@ const Offers = () => {
         </h3>
       </div>
 
-      {/* Button */}
-      <div className="flex justify-center mb-8">
-        <button className="bg-gradient-to-r from-[#3B4B96] to-[#FF5722] text-white px-6 py-2.5 rounded-xl hover:from-[#2C3A7D] hover:to-[#E64A19] transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5 text-xs sm:text-sm md:text-base">
-          View All <ArrowRight size={18} />
+      {/* Button - Right Aligned + Simple */}
+      <div className="mt-8 flex justify-end">
+        <button className="text-blue-800 font-semibold text-sm sm:text-base hover:underline">
+          View All
         </button>
       </div>
 
       {/* Desktop View */}
-      <div className="hidden sm:flex justify-center flex-wrap gap-8">
+      <div className="hidden sm:flex justify-center flex-wrap gap-8 mt-6">
         {[1, 2, 3].map((id) => (
           <div
             key={id}
@@ -43,11 +43,11 @@ const Offers = () => {
       </div>
 
       {/* Mobile Swiper View */}
-      <div className="sm:hidden mt-4">
+      <div className="sm:hidden mt-6">
         <Swiper
           modules={[Autoplay]}
           spaceBetween={12}
-          slidesPerView={1.0} // Show only 1 full image
+          slidesPerView={1.0}
           autoplay={{ delay: 2500, disableOnInteraction: false }}
           className="px-2"
         >
