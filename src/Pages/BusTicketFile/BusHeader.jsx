@@ -17,26 +17,26 @@ const BusHeader = () => {
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#FF8A65] to-[#7986CB] opacity-80 z-0"></div>
 
-        {/* ========= Centered Content ========= */}
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-white px-6 text-center space-y-5 z-0 mb-20 sm:mb-30">
-          <h1 className="text-3xl sm:text-5xl font-extrabold leading-tight drop-shadow-xl">
+        {/* ========= Centered Text Content ========= */}
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-white px-4 sm:px-6 text-center space-y-3 sm:space-y-5 z-10">
+          <h1 className="text-lg sm:text-5xl font-bold sm:font-extrabold leading-snug sm:leading-tight drop-shadow-xl">
             We provide bus services to
             <br className="hidden sm:block" />
             popular destinations in North India
           </h1>
 
-          <p className="flex items-center space-x-1 text-yellow-300 font-semibold text-lg drop-shadow-md">
+          <p className="flex items-center space-x-1 text-yellow-300 font-semibold text-sm sm:text-lg drop-shadow-md">
             <span>★ 3.5</span>
             <span className="text-white font-normal">248 Google reviews</span>
           </p>
 
-          <p className="text-lg sm:text-xl font-medium drop-shadow-md">
+          <p className="text-sm sm:text-xl font-medium drop-shadow-md">
             Search bus tickets to Indian destinations
           </p>
         </div>
       </div>
 
-      {/* ========= Bus Animation: Only on Large Screens ========= */}
+      {/* ========= Bus Animation: Hidden on small screens ========= */}
       <div className="hidden lg:block">
         <BusAnimation />
       </div>
