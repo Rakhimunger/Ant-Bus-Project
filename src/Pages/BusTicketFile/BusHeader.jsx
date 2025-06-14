@@ -1,6 +1,6 @@
 import React from "react";
 import Tajmahal from "../../assets/images/Tajmahal.jpg";
-
+import BusAnimation from "../Bus/BusAnimation";
 const BusHeader = () => {
   return (
     <div className="text-gray-800 relative">
@@ -13,10 +13,10 @@ const BusHeader = () => {
         />
 
         {/* Colorful Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#3B4B96] to-[#FF5722] opacity-80 z-0"></div>
+        <div className="absolute inset-0 bg-gradient-to-r   from-[#FF8A65] to-[#7986CB] opacity-80 z-0"></div>
 
         {/* Centered Content */}
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-white px-6 text-center space-y-5 z-10">
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-white px-6 text-center space-y-5 z- pt-16">
           <h1 className="text-3xl sm:text-5xl font-extrabold leading-tight drop-shadow-xl">
             We provide bus services to
             <br className="hidden sm:block" />
@@ -33,6 +33,7 @@ const BusHeader = () => {
           </p>
         </div>
       </div>
+      <BusAnimation />
     </div>
   );
 };
