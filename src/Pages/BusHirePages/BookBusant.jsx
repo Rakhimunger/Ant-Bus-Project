@@ -29,7 +29,7 @@ const BookBusant = () => {
           the facility to choose your favorite bus from all the buses available.
         </p>
 
-        <p className="text-black italic font-light">
+        <p className="text-black font-semi-bold ">
           Thanks to our autofill function, you never need to enter your details
           when booking a bus again. Advanced passenger details forecast will
           prompt profile information based on your past booking reservation
