@@ -15,7 +15,7 @@ const BusHeader = () => {
         />
 
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#FF8A65] to-[#7986CB] opacity-80 z-0"></div>
+        <div className="absolute inset-0   z-0"></div>
 
         {/* ========= Centered Text Content ========= */}
         <div className="absolute inset-0 flex flex-col justify-center items-center text-white px-4 sm:px-6 text-center space-y-3 sm:space-y-5 z-10">
