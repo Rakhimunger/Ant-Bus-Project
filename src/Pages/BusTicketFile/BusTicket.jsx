@@ -3,6 +3,7 @@ import BusHeader from "./BusHeader";
 import Offers from "./Offers";
 import PopularIndian from "./PopularIndian";
 import AmenitiesSection from "./AmenitiesSection";
+import PopularSearches from "./PopularSearches";
 
 function BusTicket() {
   return (
@@ -11,6 +12,7 @@ function BusTicket() {
       <Offers />
       <PopularIndian />
       <AmenitiesSection />
+      <PopularSearches />
     </div>
   );
 }

@@ -39,7 +39,7 @@ const amenities = [
 const AmenitiesSection = () => {
   return (
     <div className="bg-gradient-to-b from-white via-blue-50 to-white py-16 px-4 text-center">
-      <p className="text-lg sm:text-xl text-indigo-600 font-semibold mb-2">
+      <p className="text-lg sm:text-xl text-blue-800 font-bold  mb-2">
         Amenities
       </p>
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-800 mb-12">
@@ -68,7 +68,7 @@ const AmenitiesSection = () => {
                 <div className="text-4xl sm:text-5xl transition-transform duration-300 group-hover:rotate-6">
                   {item.icon}
                 </div>
-                <p className="text-sm sm:text-base text-gray-800 font-medium group-hover:text-blue-700 transition">
+                <p className="text-sm sm:text-base text-black font-bold  group-hover:text-blue-800 transition">
                   {item.label}
                 </p>
               </div>
