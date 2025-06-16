@@ -7,6 +7,7 @@ import PopularSearches from "./PopularSearches";
 import GalleryImages from "./GalleryImages";
 import BookBusant from "../../Pages/BusHirePages/BookBusant";
 import Testimonial from "../../Pages/BusTicketFile/Testimonial";
+import FAQ from "./FAQ";
 
 function BusTicket() {
   return (
@@ -19,6 +20,7 @@ function BusTicket() {
       <GalleryImages />
       <BookBusant />
       <Testimonial />
+      <FAQ />
     </div>
   );
 }
