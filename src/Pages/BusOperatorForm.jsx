@@ -16,22 +16,21 @@ const SectionHeader = ({ icon, title }) => (
 
 const BusOperatorForm = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-blue-50 py-6 px-3 sm:px-4">
-      <div className="max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto bg-white p-4 sm:p-6 md:p-10 rounded-2xl shadow-xl">
+    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-blue-50 py-6 px-4">
+      <div className="max-w-5xl mx-auto bg-white p-4 sm:p-6 md:p-10 rounded-2xl shadow-xl">
         <h2 className="text-xl sm:text-3xl md:text-4xl text-center font-bold text-blue-800 mb-4">
           Bus Operator Registration Form
         </h2>
-        <p className="text-center text-black text-sm sm:text-base mb-8 leading-relaxed">
+        <p className="text-center text-black text-sm sm:text-base mb-8">
           Attach your buses, tempo travellers, minibuses and cars.
           <br />
           Please share the following details for us to onboard you.
         </p>
 
         <form className="space-y-10">
-          {/* Company Information */}
           <div>
             <SectionHeader icon={<FaBuilding />} title="Company Information" />
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
                 <label className="font-medium block mb-1">
                   Name of your company
@@ -64,7 +63,6 @@ const BusOperatorForm = () => {
             </div>
           </div>
 
-          {/* Vehicle Details */}
           <div>
             <SectionHeader icon={<FaBus />} title="Vehicle Details" />
             <div className="bg-gray-50 border p-4 sm:p-6 rounded-lg">
@@ -72,7 +70,7 @@ const BusOperatorForm = () => {
                 Please mention below the vehicles owned by you which you wish to
                 place on Bus Hire.
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {[
                   "Sedans & SUVs (4 - 7 seaters)",
                   "Tempo Travellers (9 - 20 seaters)",
@@ -88,10 +86,9 @@ const BusOperatorForm = () => {
             </div>
           </div>
 
-          {/* Contact Information */}
           <div>
             <SectionHeader icon={<FaPhone />} title="Contact Information" />
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
                 <label className="font-medium block mb-1">Mobile Number</label>
                 <input
@@ -131,7 +128,6 @@ const BusOperatorForm = () => {
             </div>
           </div>
 
-          {/* Office Address */}
           <div>
             <SectionHeader
               icon={<FaMapMarkedAlt />}
@@ -143,7 +139,6 @@ const BusOperatorForm = () => {
             />
           </div>
 
-          {/* PAN, GST, Cheque */}
           <div>
             <SectionHeader
               icon={<FaEnvelope />}
@@ -164,9 +159,8 @@ const BusOperatorForm = () => {
                   <p className="text-xs text-gray-500 mt-1">Format: image</p>
                 </div>
               </div>
-
-              <div className="border border-blue-300 rounded-lg bg-white shadow-sm p-4 space-y-4">
-                <div className="flex flex-col sm:flex-row sm:items-center sm:gap-6 space-y-4 sm:space-y-0">
+              <div className="border border-blue-300 rounded-lg bg-white shadow-sm p-4 mt-6 space-y-4">
+                <div className="sm:flex sm:items-center sm:gap-6 space-y-4 sm:space-y-0">
                   <div>
                     <label className="font-medium block mb-1">
                       Do you have GSTIN?
@@ -211,7 +205,6 @@ const BusOperatorForm = () => {
             </div>
           </div>
 
-          {/* Attachments */}
           <div>
             <SectionHeader icon={<FaEnvelope />} title="Attachments" />
             <div className="border border-blue-300 rounded-lg bg-white shadow-sm p-4 flex flex-col sm:flex-row justify-between items-center gap-4">
@@ -246,7 +239,6 @@ const BusOperatorForm = () => {
             </div>
           </div>
 
-          {/* Submit */}
           <div className="flex justify-center pt-6">
             <button
               type="submit"
