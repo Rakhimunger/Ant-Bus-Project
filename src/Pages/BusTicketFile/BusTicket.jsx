@@ -6,6 +6,7 @@ import AmenitiesSection from "./AmenitiesSection";
 import PopularSearches from "./PopularSearches";
 import GalleryImages from "./GalleryImages";
 import BookBusant from "../../Pages/BusHirePages/BookBusant";
+import Testimonial from "../../Pages/BusTicketFile/Testimonial";
 
 function BusTicket() {
   return (
@@ -17,6 +18,7 @@ function BusTicket() {
       <PopularSearches />
       <GalleryImages />
       <BookBusant />
+      <Testimonial />
     </div>
   );
 }
