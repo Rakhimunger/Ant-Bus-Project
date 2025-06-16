@@ -71,7 +71,7 @@ const Footer = () => {
           <h3 className="text-lg text-blue-900 font-semibold mb-4">Company</h3>
           <ul className="space-y-2 text-sm text-gray-800">
             {[
-              { label: "Become Bus Operator", to: "/become-operator" },
+              { label: "Become Bus Operator", to: "/bus-operator-form" },
               { label: "About Us", to: "/about" },
               { label: "Contact Us", to: "/contact" },
               { label: "Site Map", to: "/sitemap" },
