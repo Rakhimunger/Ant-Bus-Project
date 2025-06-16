@@ -72,7 +72,7 @@ const Footer = () => {
           <ul className="space-y-2 text-sm text-gray-800">
             {[
               { label: "Become Bus Operator", to: "/bus-operator-form" },
-              { label: "About Us", to: "/about" },
+              { label: "About Us", to: "/about-us" },
               { label: "Contact Us", to: "/contact" },
               { label: "Site Map", to: "/sitemap" },
               { label: "Gallery", to: "/gallery" },

@@ -14,6 +14,7 @@ import AcDeluxeBusHire from "./Pages/BusHirePages/AcDeluxeBusHire";
 import Details from "./Pages/Details";
 import AcSleeperBusHire from "./Pages/BusHirePages/AcSleeperBusHire";
 import BusOperatorForm from "./Pages/BusOperatorForm";
+import AboutUs from "./Pages/AboutFile/AboutUs";
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/ac-luxury-bus" element={<AcLuxuryBusHire />} />
         <Route path="/ac-sleeper-bus" element={<AcSleeperBusHire />} />
         <Route path="/bus-operator-form" element={<BusOperatorForm />} />
+        <Route path="/about-us" element={<AboutUs />} />
       </Routes>
 
       <Footer />
