@@ -37,7 +37,7 @@ const BusHeader = () => {
       </div>
 
       {/* ========= Bus Animation: Hidden on small screens ========= */}
-      <div className="hidden lg:block">
+      <div>
         <BusAnimation />
       </div>
     </div>
