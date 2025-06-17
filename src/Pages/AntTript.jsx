@@ -1,4 +1,7 @@
 import React from "react";
+import antimg3 from "../assets/images/antimg3.png";
+import antsirimg from "../assets/images/antsirimg.jpeg";
+import antimg from "../assets/images/antimg.png";
 
 const AntTript = () => {
   return (
@@ -9,18 +12,18 @@ const AntTript = () => {
         <div className="grid grid-cols-2 gap-4">
           <div className="flex flex-col gap-4">
             <img
-              src="src/assets/images/antimg3.png"
+              src={antimg3}
               alt="ANT Bus"
               className="rounded-xl shadow-lg w-full h-[160px] sm:h-[200px] md:h-[220px] object-cover border-4 border-orange-300 hover:scale-105 transition duration-300"
             />
             <img
-              src="src/assets/images/antimg.png"
+              src={antimg}
               alt="ANT Group"
               className="rounded-xl shadow-lg w-full h-[160px] sm:h-[200px] md:h-[220px] object-cover border-4 border-orange-300 hover:scale-105 transition duration-300"
             />
           </div>
           <img
-            src="src/assets/images/antsirimg.jpeg"
+            src={antsirimg}
             alt="ANT Sir"
             className="rounded-xl shadow-xl w-full h-full object-cover border-4 border-orange-300 hover:scale-105 transition duration-300"
           />

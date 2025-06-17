@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Homeimg from "../assets/images/Homeimg.jpg";
 
 const animatedLines = [
   ["Let's make your best", "trip with us"],
@@ -21,7 +22,7 @@ const HomePage = () => {
     <div className="relative font-[Poppins] w-full h-[50vh] sm:h-[70vh] md:h-[80vh] overflow-hidden">
       {/* Background Image */}
       <img
-        src="src/assets/images/Homeimg.jpg"
+        src={Homeimg}
         alt="Home Background"
         className="absolute inset-0 w-full h-full object-contain sm:object-cover object-center"
       />
