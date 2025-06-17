@@ -217,13 +217,14 @@ const Navbar = () => {
                 />
               </Link>
             </div>
+
             <div className="hidden md:flex items-center justify-center flex-1">
               <div className="flex space-x-1">
                 {/* Bus Hire Dropdown */}
                 <div className="group relative px-3 py-2 cursor-pointer">
                   <div className="flex items-center space-x-2 text-gray-600 group-hover:text-[#3B4B96] transition-colors">
                     <IoMdBus className="w-5 h-5" />
-                    <Link to="/">
+                    <Link to="/bus-hire">
                       <span className="font-medium">Bus Hire</span>
                     </Link>
                   </div>
@@ -368,7 +369,7 @@ const Navbar = () => {
               {/* Bus Hire */}
               <div className="flex items-center space-x-2 px-3 py-2 text-base font-medium text-gray-600 hover:text-[#3B4B96] hover:bg-[#3B4B96]/5 rounded-xl transition-colors cursor-pointer">
                 <FaCarSide className="w-5 h-5" />
-                <Link to="/care-hire">
+                <Link to="/car-hire">
                   <span>Care Hire</span>
                 </Link>
               </div>
@@ -376,8 +377,9 @@ const Navbar = () => {
               {/* Bus Tour */}
               <div className="flex items-center space-x-2 px-3 py-2 text-base font-medium text-gray-600 hover:text-[#3B4B96] hover:bg-[#3B4B96]/5 rounded-xl transition-colors cursor-pointer">
                 <FaTicketAlt className="w-5 h-5" />
-                <Link to="/bus-ticket"></Link>
-                <span>Bus Ticket</span>
+                <Link to="/bus-ticket">
+                  <span>Bus Ticket</span>
+                </Link>
               </div>
 
               {/* Bus Ticket */}
