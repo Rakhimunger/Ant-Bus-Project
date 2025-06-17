@@ -39,24 +39,23 @@ const BusHeader = () => {
 
           {/* ====== Search Form ====== */}
           <div className="bg-white/30 backdrop-blur-md rounded-xl p-3 sm:p-5 flex flex-col sm:flex-row gap-3 sm:gap-4 shadow-2xl w-full max-w-4xl mt-3">
-            {/* From */}
             <input
               type="text"
               placeholder="From"
               className="flex-1 px-4 py-2 rounded-lg border border-white/30 text-sm sm:text-base text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-indigo-300 bg-white/10"
             />
-            {/* To */}
+
             <input
               type="text"
               placeholder="To"
               className="flex-1 px-4 py-2 rounded-lg border border-white/30 text-sm sm:text-base text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-indigo-300 bg-white/10"
             />
-            {/* Date */}
+
             <input
               type="date"
               className="flex-1 px-4 py-2 rounded-lg border border-white/30 text-sm sm:text-base text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-indigo-300 bg-white/10"
             />
-            {/* Button */}
+
             <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 py-2 rounded-lg text-sm sm:text-base">
               Search Buses
             </button>

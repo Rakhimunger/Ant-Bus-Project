@@ -207,7 +207,7 @@ const Navbar = () => {
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center h-20">
               <Link
-                to="/"
+                to="/home"
                 className="transform hover:scale-105 transition-transform duration-200"
               >
                 <img

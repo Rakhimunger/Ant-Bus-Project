@@ -69,9 +69,9 @@ const CardsBuses = ({
 export default function BusList() {
   return (
     <div className="bg-gradient-to-br from-white via-blue-50 to-blue-100 px-4 py-6 sm:px-6 lg:px-20">
-      <h2 className="text-center text-3xl sm:text-4xl font-extrabold text-blue-900 mb-10">
+      {/* <h2 className="text-center text-3xl sm:text-4xl font-extrabold text-blue-900 mb-10">
         Our Available Buses
-      </h2>
+      </h2> */}
 
       <div className="block sm:hidden">
         <Swiper

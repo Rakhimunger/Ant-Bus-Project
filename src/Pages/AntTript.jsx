@@ -60,7 +60,7 @@ const AntTript = () => {
           <h3 className="text-2xl sm:text-3xl font-bold text-orange-600">
             20+ Years
           </h3>
-          <p className="mt-2 text-gray-600 text-sm sm:text-base">
+          <p className="mt-2 text-black text-sm sm:text-base">
             Industry Experience
           </p>
         </div>
@@ -68,7 +68,7 @@ const AntTript = () => {
           <h3 className="text-2xl sm:text-3xl font-bold text-orange-600">
             100+ Clients
           </h3>
-          <p className="mt-2 text-gray-600 text-sm sm:text-base">
+          <p className="mt-2 text-black text-sm sm:text-base">
             Served Across NCR
           </p>
         </div>
@@ -76,7 +76,7 @@ const AntTript = () => {
           <h3 className="text-2xl sm:text-3xl font-bold text-orange-600">
             24/7
           </h3>
-          <p className="mt-2 text-gray-600 text-sm sm:text-base">
+          <p className="mt-2 text-black text-sm sm:text-base">
             Customer Support
           </p>
         </div>
