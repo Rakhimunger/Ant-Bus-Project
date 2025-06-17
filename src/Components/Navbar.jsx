@@ -20,19 +20,6 @@ const Navbar = () => {
   const [showHireOptions, setShowHireOptions] = useState(false);
   const [isBookingOpen, setIsBookingOpen] = useState(false);
 
-  const busHireOptions = [
-    { name: "Local Run", path: "/bus-hire/deluxe" },
-    { name: "Outstation Run", path: "/bus-hire/deluxe" },
-    { name: "Airport Transfer", path: "/bus-hire/airport-transfer" },
-    { name: "Wedding Transport", path: "/bus-hire/wedding" },
-    { name: "Chardham Yatra", path: "/bus-hire/chardham-yatra" },
-    { name: "Ayodhya Ram Mandir", path: "/bus-hire/ayodhya-ram-mandir" },
-    { name: "Katra Vaishno Devi", path: "/bus-hire/katra-vaishno-devi" },
-    { name: "Agra Taj Mahal Tour", path: "/bus-hire/agra-tajmahal" },
-    { name: "Ujjain Mahakal Darshan", path: "/bus-hire/ujjain-mahakal" },
-    { name: "Khatu Shyam Salasar", path: "/bus-hire/khatu-shyam-salasar" },
-  ];
-
   return (
     <div className="w-full">
       {/* Top Bar */}
@@ -283,7 +270,6 @@ const Navbar = () => {
               <Link
                 to="/book-now"
                 className="bg-gradient-to-r from-[#3B4B96] to-[#FF5722] text-white px-6 py-2.5 rounded-xl hover:from-[#2C3A7D] hover:to-[#E64A19] transition-all duration-300 flex items-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
-                onClick={() => setIsModalOpen(true)}
               >
                 Book Now
                 <path
@@ -359,31 +345,31 @@ const Navbar = () => {
                   }`}
                 />
               </div>
-
-              {showHireOptions && (
-                <div className="ml-8 space-y-1">
-                  {busHireOptions.map((item) => (
-                    <Link
-                      key={item.name}
-                      to={item.path}
-                      className="block px-3 py-2 text-gray-600 hover:text-[#3B4B96] hover:bg-[#3B4B96]/5 rounded-xl transition-colors"
-                      onClick={() => setShowHireOptions(false)} // Close on selection
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
+              {/* Bus Hire */}
+              <div className="flex items-center space-x-2 px-3 py-2 text-base font-medium text-gray-600 hover:text-[#3B4B96] hover:bg-[#3B4B96]/5 rounded-xl transition-colors cursor-pointer">
+                <FaBus className="w-5 h-5" />
+                <span>Bus Hire</span>
+              </div>
+              {/* Bus Hire */}
+              <div className="flex items-center space-x-2 px-3 py-2 text-base font-medium text-gray-600 hover:text-[#3B4B96] hover:bg-[#3B4B96]/5 rounded-xl transition-colors cursor-pointer">
+                <FaTicketAlt className="w-5 h-5" />
+                <span>Minivan</span>
+              </div>
+              {/* Bus Hire */}
+              <div className="flex items-center space-x-2 px-3 py-2 text-base font-medium text-gray-600 hover:text-[#3B4B96] hover:bg-[#3B4B96]/5 rounded-xl transition-colors cursor-pointer">
+                <FaCarSide className="w-5 h-5" />
+                <span>Care Hire</span>
+              </div>
 
               {/* Bus Tour */}
               <div className="flex items-center space-x-2 px-3 py-2 text-base font-medium text-gray-600 hover:text-[#3B4B96] hover:bg-[#3B4B96]/5 rounded-xl transition-colors cursor-pointer">
-                <FaBus className="w-5 h-5" />
+                <FaMapMarkedAlt className="w-5 h-5" />
                 <span>Bus Tour</span>
               </div>
 
               {/* Bus Ticket */}
               <div className="flex items-center space-x-2 px-3 py-2 text-base font-medium text-gray-600 hover:text-[#3B4B96] hover:bg-[#3B4B96]/5 rounded-xl transition-colors cursor-pointer">
-                <FaBus className="w-5 h-5" />
+                <FaShuttleVan className="w-5 h-5" />
                 <span>Bus Ticket</span>
               </div>
               <div className="border-t border-gray-200 pt-4 pb-3">
