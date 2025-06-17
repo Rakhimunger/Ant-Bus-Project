@@ -6,6 +6,9 @@ import HomeAcDelux from "./HomeFiles/HomeAcDelux";
 import HomeAcLuxuryBus from "./HomeFiles/HomeAcLuxuryBus";
 import HomeAcSleeper from "./HomeFiles/HomeAcSleeper";
 import HomeGallery from "./HomeFiles/HomeGellery";
+import Testimonial from "../Pages/BusTicketFile/Testimonial";
+import FAQ from "../Pages/BusTicketFile/FAQ";
+import TransportModel from "./HomeFiles/TransportModel";
 
 const Home = () => {
   return (
@@ -17,6 +20,9 @@ const Home = () => {
       <HomeAcLuxuryBus />
       <HomeAcSleeper />
       <HomeGallery />
+      <TransportModel />
+      <Testimonial />
+      <FAQ />
     </div>
   );
 };
