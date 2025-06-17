@@ -223,7 +223,9 @@ const Navbar = () => {
                 <div className="group relative px-3 py-2 cursor-pointer">
                   <div className="flex items-center space-x-2 text-gray-600 group-hover:text-[#3B4B96] transition-colors">
                     <IoMdBus className="w-5 h-5" />
-                    <span className="font-medium">Bus Hire</span>
+                    <Link to="/">
+                      <span className="font-medium">Bus Hire</span>
+                    </Link>
                   </div>
                   <div className="absolute bottom-0 left-0 h-0.5 w-full bg-[#3B4B96] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
                 </div>
@@ -231,7 +233,9 @@ const Navbar = () => {
                 <div className="group relative px-3 py-2 cursor-pointer">
                   <div className="flex items-center space-x-2 text-gray-600 group-hover:text-[#3B4B96] transition-colors">
                     <FaShuttleVan className="w-5 h-5" />
-                    <span className="font-medium">Minivan</span>
+                    <Link to="/mini-van">
+                      <span className="font-medium">Minivan</span>
+                    </Link>
                   </div>
                   <div className="absolute bottom-0 left-0 h-0.5 w-full bg-[#3B4B96] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
                 </div>
@@ -239,7 +243,9 @@ const Navbar = () => {
                 <div className="group relative px-3 py-2 cursor-pointer">
                   <div className="flex items-center space-x-2 text-gray-600 group-hover:text-[#3B4B96] transition-colors">
                     <FaCarSide className="w-5 h-5" />
-                    <span className="font-medium">Care Hire</span>
+                    <Link to="/car-hire">
+                      <span className="font-medium">Care Hire</span>
+                    </Link>
                   </div>
                   <div className="absolute bottom-0 left-0 h-0.5 w-full bg-[#3B4B96] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
                 </div>
@@ -247,8 +253,10 @@ const Navbar = () => {
                 {/* Bus Tour */}
                 <div className="group relative px-3 py-2 cursor-pointer">
                   <div className="flex items-center space-x-2 text-gray-600 group-hover:text-[#3B4B96] transition-colors">
-                    <FaMapMarkedAlt className="w-5 h-5" />
-                    <span className="font-medium">Bus Tour</span>
+                    <FaTicketAlt className="w-5 h-5" />
+                    <Link to="/bus-ticket">
+                      <span className="font-medium">Bus Ticket</span>
+                    </Link>
                   </div>
                   <div className="absolute bottom-0 left-0 h-0.5 w-full bg-[#3B4B96] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
                 </div>
@@ -256,8 +264,10 @@ const Navbar = () => {
                 {/* Bus Ticket */}
                 <div className="group relative px-3 py-2 cursor-pointer">
                   <div className="flex items-center space-x-2 text-gray-600 group-hover:text-[#3B4B96] transition-colors">
-                    <FaTicketAlt className="w-5 h-5" />
-                    <span className="font-medium">Bus Ticket</span>
+                    <FaMapMarkedAlt className="w-5 h-5" />
+                    <Link to="/bus-tour">
+                      <span className="font-medium">Bus Tour</span>
+                    </Link>
                   </div>
                   <div className="absolute bottom-0 left-0 h-0.5 w-full bg-[#3B4B96] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
                 </div>
@@ -269,7 +279,7 @@ const Navbar = () => {
               {/* Book Now Button */}
               <Link
                 to="/book-now"
-                className="bg-gradient-to-r from-[#3B4B96] to-[#FF5722] text-white px-6 py-2.5 rounded-xl hover:from-[#2C3A7D] hover:to-[#E64A19] transition-all duration-300 flex items-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+                className="bg-gradient-to-r from-[#3B4B96] to-[#FF5722] text-white px-4 py-2 sm:py-2.5 rounded-xl text-sm hover:from-[#2C3A7D] hover:to-[#E64A19] transition-all duration-300 flex items-center justify-center gap-2 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 whitespace-nowrap ml-4 sm:ml-0"
               >
                 Book Now
                 <path
@@ -283,7 +293,7 @@ const Navbar = () => {
             <div className="relative flex items-center ml-3">
               <div
                 onClick={() => setIsBookingOpen((prev) => !prev)}
-                className="bg-gradient-to-r from-[#3B4B96] to-[#FF5722] text-white px-6 py-2.5 rounded-xl hover:from-[#2C3A7D] hover:to-[#E64A19] transition-all duration-300 flex items-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+                className="bg-gradient-to-r from-[#3B4B96] to-[#FF5722] text-white px-3 sm:px-6 py-2 sm:py-2.5 text-sm sm:text-base rounded-xl hover:from-[#2C3A7D] hover:to-[#E64A19] transition-all duration-300 flex items-center justify-center whitespace-nowrap shadow-md hover:shadow-lg transform hover:-translate-y-0.5 ml- sm:ml-0"
                 title="Manage Booking"
               >
                 Manage Booking
@@ -337,7 +347,9 @@ const Navbar = () => {
               >
                 <div className="flex items-center space-x-2">
                   <FaBus className="w-5 h-5" />
-                  <span>Bus Hire</span>
+                  <Link to="/bus-hire">
+                    <span>Bus Hire</span>
+                  </Link>
                 </div>
                 <FaChevronDown
                   className={`w-4 h-4 transition-transform ${
@@ -345,32 +357,35 @@ const Navbar = () => {
                   }`}
                 />
               </div>
+
               {/* Bus Hire */}
               <div className="flex items-center space-x-2 px-3 py-2 text-base font-medium text-gray-600 hover:text-[#3B4B96] hover:bg-[#3B4B96]/5 rounded-xl transition-colors cursor-pointer">
-                <FaBus className="w-5 h-5" />
-                <span>Bus Hire</span>
-              </div>
-              {/* Bus Hire */}
-              <div className="flex items-center space-x-2 px-3 py-2 text-base font-medium text-gray-600 hover:text-[#3B4B96] hover:bg-[#3B4B96]/5 rounded-xl transition-colors cursor-pointer">
-                <FaTicketAlt className="w-5 h-5" />
-                <span>Minivan</span>
+                <FaShuttleVan className="w-5 h-5" />
+                <Link to="/mini-van">
+                  <span>Minivan</span>
+                </Link>
               </div>
               {/* Bus Hire */}
               <div className="flex items-center space-x-2 px-3 py-2 text-base font-medium text-gray-600 hover:text-[#3B4B96] hover:bg-[#3B4B96]/5 rounded-xl transition-colors cursor-pointer">
                 <FaCarSide className="w-5 h-5" />
-                <span>Care Hire</span>
+                <Link to="/care-hire">
+                  <span>Care Hire</span>
+                </Link>
               </div>
 
               {/* Bus Tour */}
               <div className="flex items-center space-x-2 px-3 py-2 text-base font-medium text-gray-600 hover:text-[#3B4B96] hover:bg-[#3B4B96]/5 rounded-xl transition-colors cursor-pointer">
-                <FaMapMarkedAlt className="w-5 h-5" />
-                <span>Bus Tour</span>
+                <FaTicketAlt className="w-5 h-5" />
+                <Link to="/bus-ticket"></Link>
+                <span>Bus Ticket</span>
               </div>
 
               {/* Bus Ticket */}
               <div className="flex items-center space-x-2 px-3 py-2 text-base font-medium text-gray-600 hover:text-[#3B4B96] hover:bg-[#3B4B96]/5 rounded-xl transition-colors cursor-pointer">
-                <FaShuttleVan className="w-5 h-5" />
-                <span>Bus Ticket</span>
+                <FaMapMarkedAlt className="w-5 h-5" />
+                <Link to="/bus-tour">
+                  <span>Bus Tour</span>
+                </Link>
               </div>
               <div className="border-t border-gray-200 pt-4 pb-3">
                 <a
