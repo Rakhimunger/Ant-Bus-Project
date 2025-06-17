@@ -14,7 +14,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-br from-[#dfefff] via-[#eaf3ff] to-[#f4f9ff] text-[#1b2a4e] text-sm pt-12">
+    <footer className="bg-gray-50 text-[#1b2a4e] text-sm pt-12">
       {/* Top Section */}
       <div className="max-w-7xl mx-auto px-4 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-gray-300">
         {/* Logo & About */}
