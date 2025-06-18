@@ -1,32 +1,59 @@
 import React from "react";
 import { FaBusAlt, FaUserTie, FaTags } from "react-icons/fa";
 
-import antimg5 from "../../assets/images/antimg5.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+
+import antimg1 from "../../assets/images/antimg1.png";
 import minivan from "../../assets/images/minivan.png";
 import antimg4 from "../../assets/images/antimg4.png";
 import antimg3 from "../../assets/images/antimg3.png";
 
 const TransportModel = () => {
+  const images = [antimg1, minivan, antimg4, antimg3];
+
   return (
     <div className="bg-gradient-to-br from-white to-blue-50 py-12 px-4 sm:px-6 lg:px-20 text-gray-800">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        {/* Image Gallery Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {[antimg5, minivan, antimg4, antimg3].map((img, i) => (
-            <div
-              key={i}
-              className="overflow-hidden rounded-2xl shadow-md group"
+        <div>
+          <div className="block sm:hidden">
+            <Swiper
+              modules={[Autoplay, Pagination]}
+              autoplay={{ delay: 3000 }}
+              pagination={{ clickable: true }}
+              loop={true}
+              className="w-full h-64"
             >
-              <img
-                src={img}
-                alt={`Bus ${i + 1}`}
-                className="w-full h-40 sm:h-48 md:h-60 object-cover transform group-hover:scale-105 group-hover:rotate-1 transition-all duration-500 ease-in-out"
-              />
-            </div>
-          ))}
+              {images.map((img, i) => (
+                <SwiperSlide key={i}>
+                  <img
+                    src={img}
+                    alt={`Bus ${i + 1}`}
+                    className="w-full h-64 object-cover rounded-xl shadow-md"
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+
+          <div className="hidden sm:grid grid-cols-2 gap-4">
+            {images.map((img, i) => (
+              <div
+                key={i}
+                className="overflow-hidden rounded-2xl shadow-md group"
+              >
+                <img
+                  src={img}
+                  alt={`Bus ${i + 1}`}
+                  className="w-full h-50 md:h-60 object-cover transform group-hover:scale-105 group-hover:rotate-1 transition-all duration-500 ease-in-out"
+                />
+              </div>
+            ))}
+          </div>
         </div>
 
-        {/* Why Choose Us Section */}
         <div className="text-center lg:text-left">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#3B4B96] mb-3 relative inline-block">
             Why Choose Us
@@ -38,7 +65,6 @@ const TransportModel = () => {
           </p>
 
           <div className="space-y-5 sm:space-y-6">
-            {/* Card 1 */}
             <div className="flex items-start gap-3 sm:gap-4 bg-white shadow-md p-4 rounded-xl border-l-4 border-[#3B4B96] hover:shadow-lg transition">
               <FaBusAlt className="text-[#3B4B96] w-5 h-5 sm:w-6 sm:h-6 mt-1" />
               <div>
@@ -52,7 +78,6 @@ const TransportModel = () => {
               </div>
             </div>
 
-            {/* Card 2 */}
             <div className="flex items-start gap-3 sm:gap-4 bg-white shadow-md p-4 rounded-xl border-l-4 border-[#3B4B96] hover:shadow-lg transition">
               <FaUserTie className="text-[#3B4B96] w-5 h-5 sm:w-6 sm:h-6 mt-1" />
               <div>
@@ -66,7 +91,6 @@ const TransportModel = () => {
               </div>
             </div>
 
-            {/* Card 3 */}
             <div className="flex items-start gap-3 sm:gap-4 bg-white shadow-md p-4 rounded-xl border-l-4 border-[#3B4B96] hover:shadow-lg transition">
               <FaTags className="text-[#3B4B96] w-5 h-5 sm:w-6 sm:h-6 mt-1" />
               <div>
