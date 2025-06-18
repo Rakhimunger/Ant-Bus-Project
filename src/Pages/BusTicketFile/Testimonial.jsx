@@ -41,15 +41,12 @@ const testimonials = [
 
 const Testimonial = () => {
   return (
-    <section className="bg-gradient-to-b from-[#0f172a] via-[#1e293b] to-[#0f172a] text-white py-12 px-3 sm:px-6 md:px-12 font-sans relative overflow-hidden">
+    <section className="text-black bg-gray-100 py-12 px-3 sm:px-6 md:px-12 font-sans relative overflow-hidden">
       <div className="text-center mb-10 sm:mb-12">
-        <h3 className="text-xs sm:text-sm text-indigo-400 uppercase tracking-wider">
-          Testimonials
-        </h3>
-        <h2 className="text-2xl sm:text-4xl font-extrabold text-white drop-shadow-xl">
+        <h2 className="text-2xl sm:text-4xl font-extrabold text-black  bg-clip-text drop-shadow-xl">
           What Our Travellers Say
         </h2>
-        <p className="text-slate-400 mt-2 sm:mt-4 max-w-lg mx-auto text-sm sm:text-base">
+        <p className="text-black mt-2 sm:mt-4 max-w-lg mx-auto text-sm sm:text-base">
           Real voices. Real journeys. Rated with satisfaction and heartfelt
           smiles.
         </p>
@@ -80,7 +77,7 @@ const Testimonial = () => {
       >
         {testimonials.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 sm:p-6 shadow-xl transition-transform duration-300 hover:scale-[1.02] hover:shadow-indigo-500/50">
+            <div className="bg-white/10 backdrop-blur-md border border-black/40 rounded-2xl p-4 sm:p-6 shadow-xl transition-transform duration-300 hover:scale-[1.02] hover:shadow-indigo-500/50">
               {/* Avatar */}
               <div className="flex justify-center mb-3">
                 <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden ring-4 ring-indigo-500 shadow-lg">
@@ -93,15 +90,15 @@ const Testimonial = () => {
               </div>
 
               {/* Name + Role */}
-              <h4 className="text-lg sm:text-xl font-semibold text-indigo-300 text-center">
+              <h4 className="text-lg sm:text-xl font-semibold text-black text-center">
                 {item.name}
               </h4>
-              <p className="text-[11px] sm:text-xs text-slate-400 text-center mb-3 uppercase tracking-wide">
+              <p className="text-[11px] sm:text-xs text-white text-center mb-3 uppercase tracking-wide">
                 {item.role}
               </p>
 
               {/* Message */}
-              <p className="text-slate-200 text-center italic text-sm sm:text-base leading-snug">
+              <p className="text-black text-center italic text-sm sm:text-base leading-snug">
                 “{item.message}”
               </p>
 

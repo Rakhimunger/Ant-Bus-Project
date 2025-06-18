@@ -6,7 +6,7 @@ import BusHirePage from "./Pages/BusHirePages/BusHirePage";
 import MiniVanPage from "./Pages/MiniVanPage";
 import CarHirePage from "./Pages/CarHirePage";
 import BusTicket from "./Pages/BusTicketFile/BusTicket";
-import BusTourPage from "./Pages/BusTourPage";
+import BusTourPage from "./Pages/BusTourFile/BusTourPage";
 import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
 import AcLuxuryBusHire from "./Pages/BusHirePages/AcLuxuryBusHire";
@@ -40,6 +40,7 @@ const App = () => {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="terms-condtions" element={<TermsAndCondition />} />
+        <Route path="/policy" element={<PolicyPage />} />
         <Route path="/policy" element={<PolicyPage />} />
       </Routes>
 
