@@ -15,6 +15,8 @@ import Details from "./Pages/Details";
 import AcSleeperBusHire from "./Pages/BusHirePages/AcSleeperBusHire";
 import BusOperatorForm from "./Pages/BusOperatorForm";
 import AboutUs from "./Pages/AboutFile/AboutUs";
+import Gallery from "./Pages/GalleryFile/Gallery";
+import TermsAndCondition from "./Pages/Terms&Conditions/TermsAndCondition";
 
 const App = () => {
   return (
@@ -35,6 +37,8 @@ const App = () => {
         <Route path="/ac-sleeper-bus" element={<AcSleeperBusHire />} />
         <Route path="/bus-operator-form" element={<BusOperatorForm />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="terms-condtions" element={<TermsAndCondition />} />
       </Routes>
 
       <Footer />

@@ -4,6 +4,7 @@ import antimg2 from "../../assets/images/antimg2.png";
 import antimg3 from "../../assets/images/antimg3.png";
 import antimg4 from "../../assets/images/antimg4.png";
 import antimg5 from "../../assets/images/antimg5.png";
+import { Link } from "react-router-dom";
 
 const HomeGallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -11,7 +12,7 @@ const HomeGallery = () => {
   const images = [
     { src: antimg },
     { src: antimg3 },
-    { src: antimg2 }, // this one needs margin-top
+    { src: antimg2 },
     { src: antimg4 },
     { src: antimg5 },
   ];
@@ -49,9 +50,11 @@ const HomeGallery = () => {
 
       {/* View All Button */}
       <div className="flex justify-center mt-10">
-        <button className="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all text-lg font-semibold shadow-md">
-          View All →
-        </button>
+        <Link to="/gallery">
+          <button className="bg-gradient-to-r from-[#3B4B96] to-[#FF5722] text-white px-4 py-2 sm:py-2.5 rounded-xl text-sm hover:from-[#2C3A7D] hover:to-[#E64A19] transition-all duration-300 flex items-center justify-center gap-2 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 whitespace-nowrap">
+            View All →
+          </button>
+        </Link>
       </div>
 
       {/* Fullscreen Modal */}

@@ -13,6 +13,7 @@ const Offers = () => {
         <h2 className="text-lg sm:text-3xl md:text-4xl font-bold text-blue-900 font-playfair leading-tight">
           🎉 Discover the Hottest Deals of the Season
         </h2>
+
         <h3 className="text-sm sm:text-lg md:text-xl font-semibold text-blue-800 mt-2">
           Trending Offers Just for You
         </h3>

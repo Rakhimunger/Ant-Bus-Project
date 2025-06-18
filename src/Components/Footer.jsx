@@ -76,7 +76,7 @@ const Footer = () => {
               { label: "Contact Us", to: "/contact" },
               { label: "Site Map", to: "/sitemap" },
               { label: "Gallery", to: "/gallery" },
-              { label: "Terms & Conditions", to: "/terms" },
+              { label: "Terms & Conditions", to: "/terms-condtions" },
               { label: "Policy", to: "/policy" },
             ].map((item, idx) => (
               <li key={idx}>

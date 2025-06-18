@@ -47,7 +47,7 @@ const Testimonial = () => {
           Testimonials
         </h3>
         <h2 className="text-2xl sm:text-4xl font-extrabold text-white drop-shadow-xl">
-          ❤️ What Our Travellers Say
+          What Our Travellers Say
         </h2>
         <p className="text-slate-400 mt-2 sm:mt-4 max-w-lg mx-auto text-sm sm:text-base">
           Real voices. Real journeys. Rated with satisfaction and heartfelt
