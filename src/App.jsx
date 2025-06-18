@@ -17,6 +17,7 @@ import BusOperatorForm from "./Pages/BusOperatorForm";
 import AboutUs from "./Pages/AboutFile/AboutUs";
 import Gallery from "./Pages/GalleryFile/Gallery";
 import TermsAndCondition from "./Pages/Terms&Conditions/TermsAndCondition";
+import PolicyPage from "./Pages/PolicyFile/PolicyPage";
 
 const App = () => {
   return (
@@ -39,6 +40,7 @@ const App = () => {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="terms-condtions" element={<TermsAndCondition />} />
+        <Route path="/policy" element={<PolicyPage />} />
       </Routes>
 
       <Footer />
